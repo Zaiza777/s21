@@ -1,0 +1,26 @@
+---
+  - name: Configure /etc/hosts
+    blockinfile: 
+      path: /etc/hosts
+      block: |
+        {{ etcd.0 }}  etcd0
+        {{ etcd.1 }}  etcd1
+        {{ etcd.2 }}  etcd2
+        
+  - name: Del File
+    shell: "rm -rf /var/lib/etcd/default/member/snap/* /var/lib/etcd/default/member/wal/*"
+
+  - name: Conf default/etcd
+    template:
+      src: "etcd.j2"
+      dest: "/etc/default/etcd"
+      owner: "etcd"
+      group: "etcd"
+      mode: 0400
+      force: true
+
+  - name: Start etcd.service 
+    service:
+      name: etcd
+      state: restarted
+      enabled: true

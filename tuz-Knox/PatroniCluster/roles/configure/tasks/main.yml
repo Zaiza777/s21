@@ -1,0 +1,8 @@
+---
+  - name: Task For Etcd
+    include: ./etcd.yml
+    when: inventory_hostname in groups['etcd']
+
+  - name: Task For Patroni
+    include: ./patroni.yml
+    when: inventory_hostname in groups['patroni']

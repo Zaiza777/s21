@@ -1,0 +1,13 @@
+---
+# This playbook deploys the whole application stack in this site.
+
+- name: Install Service
+  hosts: all
+  roles:
+    - install
+    - configure
+  vars_files:
+    - ../group_vars/all.yml
+    - ../group_vars/secret.yml
+  post_tasks:
+    - include: ../handlers/main.yml

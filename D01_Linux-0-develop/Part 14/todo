@@ -1,0 +1,3 @@
+Jun 13 21:02:03 astra polkitd(authority=local): Operator of unix-process:18704:666133 successfully authenticated as unix-user:astraeus to gain TEMPORARY authorization for action org.freedesktop.timedate1.set-timezone for system-bus-name::1.45 [timedatectl set-timezone Europe/Moscow] (owned by unix-user:user1)
+
+Jun 13 21:02:03  authority=local

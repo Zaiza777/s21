@@ -1,0 +1,480 @@
+-v -c -l 1 2 file file2 file3
+-v -c -l -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -c -l 1 2 file file2 file3
+-v -c -l 1 2 file file2 file3
+-v -c -l -f pattern.txt 1 2 file file2 file3
+-v -c -l -f pattern.txt 1 2 file file2 file3
+-v -c -n 1 2 file file2 file3
+-v -c -n -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -c -n 1 2 file file2 file3
+-v -c -n 1 2 file file2 file3
+-v -c -n -f pattern.txt 1 2 file file2 file3
+-v -c -n -f pattern.txt 1 2 file file2 file3
+-v -c -h 1 2 file file2 file3
+-v -c -h -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -c -h 1 2 file file2 file3
+-v -c -h 1 2 file file2 file3
+-v -c -h -f pattern.txt 1 2 file file2 file3
+-v -c -h -f pattern.txt 1 2 file file2 file3
+-v -c -i 1 2 file file2 file3
+-v -c -i -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -c -i 1 2 file file2 file3
+-v -c -i 1 2 file file2 file3
+-v -c -i -f pattern.txt 1 2 file file2 file3
+-v -c -i -f pattern.txt 1 2 file file2 file3
+-v -c -s 1 2 file file2 file3
+-v -c -s -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -c -s 1 2 file file2 file3
+-v -c -s 1 2 file file2 file3
+-v -c -s -f pattern.txt 1 2 file file2 file3
+-v -c -s -f pattern.txt 1 2 file file2 file3
+-v -l -c 1 2 file file2 file3
+-v -l -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -l -c 1 2 file file2 file3
+-v -l -c 1 2 file file2 file3
+-v -l -c -f pattern.txt 1 2 file file2 file3
+-v -l -c -f pattern.txt 1 2 file file2 file3
+-v -n -c 1 2 file file2 file3
+-v -n -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -n -c 1 2 file file2 file3
+-v -n -c 1 2 file file2 file3
+-v -n -c -f pattern.txt 1 2 file file2 file3
+-v -n -c -f pattern.txt 1 2 file file2 file3
+-v -n -h 1 2 file file2 file3
+-v -n -h -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -n -h 1 2 file file2 file3
+-v -n -h 1 2 file file2 file3
+-v -n -h -f pattern.txt 1 2 file file2 file3
+-v -n -h -f pattern.txt 1 2 file file2 file3
+-v -n -i 1 2 file file2 file3
+-v -n -i -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -n -i 1 2 file file2 file3
+-v -n -i 1 2 file file2 file3
+-v -n -i -f pattern.txt 1 2 file file2 file3
+-v -n -i -f pattern.txt 1 2 file file2 file3
+-v -n -s 1 2 file file2 file3
+-v -n -s -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -n -s 1 2 file file2 file3
+-v -n -s 1 2 file file2 file3
+-v -n -s -f pattern.txt 1 2 file file2 file3
+-v -n -s -f pattern.txt 1 2 file file2 file3
+-v -h -c 1 2 file file2 file3
+-v -h -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -h -c 1 2 file file2 file3
+-v -h -c 1 2 file file2 file3
+-v -h -c -f pattern.txt 1 2 file file2 file3
+-v -h -c -f pattern.txt 1 2 file file2 file3
+-v -h -n 1 2 file file2 file3
+-v -h -n -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -h -n 1 2 file file2 file3
+-v -h -n 1 2 file file2 file3
+-v -h -n -f pattern.txt 1 2 file file2 file3
+-v -h -n -f pattern.txt 1 2 file file2 file3
+-v -h -i 1 2 file file2 file3
+-v -h -i -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -h -i 1 2 file file2 file3
+-v -h -i 1 2 file file2 file3
+-v -h -i -f pattern.txt 1 2 file file2 file3
+-v -h -i -f pattern.txt 1 2 file file2 file3
+-v -h -s 1 2 file file2 file3
+-v -h -s -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -h -s 1 2 file file2 file3
+-v -h -s 1 2 file file2 file3
+-v -h -s -f pattern.txt 1 2 file file2 file3
+-v -h -s -f pattern.txt 1 2 file file2 file3
+-v -i -c 1 2 file file2 file3
+-v -i -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -i -c 1 2 file file2 file3
+-v -i -c 1 2 file file2 file3
+-v -i -c -f pattern.txt 1 2 file file2 file3
+-v -i -c -f pattern.txt 1 2 file file2 file3
+-v -i -n 1 2 file file2 file3
+-v -i -n -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -i -n 1 2 file file2 file3
+-v -i -n 1 2 file file2 file3
+-v -i -n -f pattern.txt 1 2 file file2 file3
+-v -i -n -f pattern.txt 1 2 file file2 file3
+-v -i -h 1 2 file file2 file3
+-v -i -h -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -i -h 1 2 file file2 file3
+-v -i -h 1 2 file file2 file3
+-v -i -h -f pattern.txt 1 2 file file2 file3
+-v -i -h -f pattern.txt 1 2 file file2 file3
+-v -i -s 1 2 file file2 file3
+-v -i -s -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -i -s 1 2 file file2 file3
+-v -i -s 1 2 file file2 file3
+-v -i -s -f pattern.txt 1 2 file file2 file3
+-v -i -s -f pattern.txt 1 2 file file2 file3
+-v -s -c 1 2 file file2 file3
+-v -s -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -s -c 1 2 file file2 file3
+-v -s -c 1 2 file file2 file3
+-v -s -c -f pattern.txt 1 2 file file2 file3
+-v -s -c -f pattern.txt 1 2 file file2 file3
+-v -s -n 1 2 file file2 file3
+-v -s -n -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -s -n 1 2 file file2 file3
+-v -s -n 1 2 file file2 file3
+-v -s -n -f pattern.txt 1 2 file file2 file3
+-v -s -n -f pattern.txt 1 2 file file2 file3
+-v -s -h 1 2 file file2 file3
+-v -s -h -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -s -h 1 2 file file2 file3
+-v -s -h 1 2 file file2 file3
+-v -s -h -f pattern.txt 1 2 file file2 file3
+-v -s -h -f pattern.txt 1 2 file file2 file3
+-v -s -i 1 2 file file2 file3
+-v -s -i -e '[0-9]' -e '^$' 1 2 file file2 file3
+-v -s -i 1 2 file file2 file3
+-v -s -i 1 2 file file2 file3
+-v -s -i -f pattern.txt 1 2 file file2 file3
+-v -s -i -f pattern.txt 1 2 file file2 file3
+-c -v -l 1 2 file file2 file3
+-c -v -l -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -v -l 1 2 file file2 file3
+-c -v -l 1 2 file file2 file3
+-c -v -l -f pattern.txt 1 2 file file2 file3
+-c -v -l -f pattern.txt 1 2 file file2 file3
+-c -v -n 1 2 file file2 file3
+-c -v -n -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -v -n 1 2 file file2 file3
+-c -v -n 1 2 file file2 file3
+-c -v -n -f pattern.txt 1 2 file file2 file3
+-c -v -n -f pattern.txt 1 2 file file2 file3
+-c -v -h 1 2 file file2 file3
+-c -v -h -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -v -h 1 2 file file2 file3
+-c -v -h 1 2 file file2 file3
+-c -v -h -f pattern.txt 1 2 file file2 file3
+-c -v -h -f pattern.txt 1 2 file file2 file3
+-c -v -i 1 2 file file2 file3
+-c -v -i -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -v -i 1 2 file file2 file3
+-c -v -i 1 2 file file2 file3
+-c -v -i -f pattern.txt 1 2 file file2 file3
+-c -v -i -f pattern.txt 1 2 file file2 file3
+-c -v -s 1 2 file file2 file3
+-c -v -s -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -v -s 1 2 file file2 file3
+-c -v -s 1 2 file file2 file3
+-c -v -s -f pattern.txt 1 2 file file2 file3
+-c -v -s -f pattern.txt 1 2 file file2 file3
+-c -l -v 1 2 file file2 file3
+-c -l -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -l -v 1 2 file file2 file3
+-c -l -v 1 2 file file2 file3
+-c -l -v -f pattern.txt 1 2 file file2 file3
+-c -l -v -f pattern.txt 1 2 file file2 file3
+-c -l -n 1 2 file file2 file3
+-c -l -n -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -l -n 1 2 file file2 file3
+-c -l -n 1 2 file file2 file3
+-c -l -n -f pattern.txt 1 2 file file2 file3
+-c -l -n -f pattern.txt 1 2 file file2 file3
+-c -l -h 1 2 file file2 file3
+-c -l -h -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -l -h 1 2 file file2 file3
+-c -l -h 1 2 file file2 file3
+-c -l -h -f pattern.txt 1 2 file file2 file3
+-c -l -h -f pattern.txt 1 2 file file2 file3
+-c -l -i 1 2 file file2 file3
+-c -l -i -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -l -i 1 2 file file2 file3
+-c -l -i 1 2 file file2 file3
+-c -l -i -f pattern.txt 1 2 file file2 file3
+-c -l -i -f pattern.txt 1 2 file file2 file3
+-c -l -s 1 2 file file2 file3
+-c -l -s -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -l -s 1 2 file file2 file3
+-c -l -s 1 2 file file2 file3
+-c -l -s -f pattern.txt 1 2 file file2 file3
+-c -l -s -f pattern.txt 1 2 file file2 file3
+-c -n -v 1 2 file file2 file3
+-c -n -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -n -v 1 2 file file2 file3
+-c -n -v 1 2 file file2 file3
+-c -n -v -f pattern.txt 1 2 file file2 file3
+-c -n -v -f pattern.txt 1 2 file file2 file3
+-c -n -l 1 2 file file2 file3
+-c -n -l -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -n -l 1 2 file file2 file3
+-c -n -l 1 2 file file2 file3
+-c -n -l -f pattern.txt 1 2 file file2 file3
+-c -n -l -f pattern.txt 1 2 file file2 file3
+-c -h -v 1 2 file file2 file3
+-c -h -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -h -v 1 2 file file2 file3
+-c -h -v 1 2 file file2 file3
+-c -h -v -f pattern.txt 1 2 file file2 file3
+-c -h -v -f pattern.txt 1 2 file file2 file3
+-c -h -l 1 2 file file2 file3
+-c -h -l -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -h -l 1 2 file file2 file3
+-c -h -l 1 2 file file2 file3
+-c -h -l -f pattern.txt 1 2 file file2 file3
+-c -h -l -f pattern.txt 1 2 file file2 file3
+-c -i -v 1 2 file file2 file3
+-c -i -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -i -v 1 2 file file2 file3
+-c -i -v 1 2 file file2 file3
+-c -i -v -f pattern.txt 1 2 file file2 file3
+-c -i -v -f pattern.txt 1 2 file file2 file3
+-c -i -l 1 2 file file2 file3
+-c -i -l -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -i -l 1 2 file file2 file3
+-c -i -l 1 2 file file2 file3
+-c -i -l -f pattern.txt 1 2 file file2 file3
+-c -i -l -f pattern.txt 1 2 file file2 file3
+-c -s -v 1 2 file file2 file3
+-c -s -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -s -v 1 2 file file2 file3
+-c -s -v 1 2 file file2 file3
+-c -s -v -f pattern.txt 1 2 file file2 file3
+-c -s -v -f pattern.txt 1 2 file file2 file3
+-c -s -l 1 2 file file2 file3
+-c -s -l -e '[0-9]' -e '^$' 1 2 file file2 file3
+-c -s -l 1 2 file file2 file3
+-c -s -l 1 2 file file2 file3
+-c -s -l -f pattern.txt 1 2 file file2 file3
+-c -s -l -f pattern.txt 1 2 file file2 file3
+-l -v -c 1 2 file file2 file3
+-l -v -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-l -v -c 1 2 file file2 file3
+-l -v -c 1 2 file file2 file3
+-l -v -c -f pattern.txt 1 2 file file2 file3
+-l -v -c -f pattern.txt 1 2 file file2 file3
+-l -c -v 1 2 file file2 file3
+-l -c -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-l -c -v 1 2 file file2 file3
+-l -c -v 1 2 file file2 file3
+-l -c -v -f pattern.txt 1 2 file file2 file3
+-l -c -v -f pattern.txt 1 2 file file2 file3
+-l -c -n 1 2 file file2 file3
+-l -c -n -e '[0-9]' -e '^$' 1 2 file file2 file3
+-l -c -n 1 2 file file2 file3
+-l -c -n 1 2 file file2 file3
+-l -c -n -f pattern.txt 1 2 file file2 file3
+-l -c -n -f pattern.txt 1 2 file file2 file3
+-l -c -h 1 2 file file2 file3
+-l -c -h -e '[0-9]' -e '^$' 1 2 file file2 file3
+-l -c -h 1 2 file file2 file3
+-l -c -h 1 2 file file2 file3
+-l -c -h -f pattern.txt 1 2 file file2 file3
+-l -c -h -f pattern.txt 1 2 file file2 file3
+-l -c -i 1 2 file file2 file3
+-l -c -i -e '[0-9]' -e '^$' 1 2 file file2 file3
+-l -c -i 1 2 file file2 file3
+-l -c -i 1 2 file file2 file3
+-l -c -i -f pattern.txt 1 2 file file2 file3
+-l -c -i -f pattern.txt 1 2 file file2 file3
+-l -c -s 1 2 file file2 file3
+-l -c -s -e '[0-9]' -e '^$' 1 2 file file2 file3
+-l -c -s 1 2 file file2 file3
+-l -c -s 1 2 file file2 file3
+-l -c -s -f pattern.txt 1 2 file file2 file3
+-l -c -s -f pattern.txt 1 2 file file2 file3
+-l -n -c 1 2 file file2 file3
+-l -n -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-l -n -c 1 2 file file2 file3
+-l -n -c 1 2 file file2 file3
+-l -n -c -f pattern.txt 1 2 file file2 file3
+-l -n -c -f pattern.txt 1 2 file file2 file3
+-l -h -c 1 2 file file2 file3
+-l -h -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-l -h -c 1 2 file file2 file3
+-l -h -c 1 2 file file2 file3
+-l -h -c -f pattern.txt 1 2 file file2 file3
+-l -h -c -f pattern.txt 1 2 file file2 file3
+-l -i -c 1 2 file file2 file3
+-l -i -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-l -i -c 1 2 file file2 file3
+-l -i -c 1 2 file file2 file3
+-l -i -c -f pattern.txt 1 2 file file2 file3
+-l -i -c -f pattern.txt 1 2 file file2 file3
+-l -s -c 1 2 file file2 file3
+-l -s -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-l -s -c 1 2 file file2 file3
+-l -s -c 1 2 file file2 file3
+-l -s -c -f pattern.txt 1 2 file file2 file3
+-l -s -c -f pattern.txt 1 2 file file2 file3
+-n -v -c 1 2 file file2 file3
+-n -v -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-n -v -c 1 2 file file2 file3
+-n -v -c 1 2 file file2 file3
+-n -v -c -f pattern.txt 1 2 file file2 file3
+-n -v -c -f pattern.txt 1 2 file file2 file3
+-n -v -h 1 2 file file2 file3
+-n -v -h -e '[0-9]' -e '^$' 1 2 file file2 file3
+-n -v -h 1 2 file file2 file3
+-n -v -h 1 2 file file2 file3
+-n -v -h -f pattern.txt 1 2 file file2 file3
+-n -v -h -f pattern.txt 1 2 file file2 file3
+-n -v -i 1 2 file file2 file3
+-n -v -i -e '[0-9]' -e '^$' 1 2 file file2 file3
+-n -v -i 1 2 file file2 file3
+-n -v -i 1 2 file file2 file3
+-n -v -i -f pattern.txt 1 2 file file2 file3
+-n -v -i -f pattern.txt 1 2 file file2 file3
+-n -v -s 1 2 file file2 file3
+-n -v -s -e '[0-9]' -e '^$' 1 2 file file2 file3
+-n -v -s 1 2 file file2 file3
+-n -v -s 1 2 file file2 file3
+-n -v -s -f pattern.txt 1 2 file file2 file3
+-n -v -s -f pattern.txt 1 2 file file2 file3
+-n -c -v 1 2 file file2 file3
+-n -c -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-n -c -v 1 2 file file2 file3
+-n -c -v 1 2 file file2 file3
+-n -c -v -f pattern.txt 1 2 file file2 file3
+-n -c -v -f pattern.txt 1 2 file file2 file3
+-n -c -l 1 2 file file2 file3
+-n -c -l -e '[0-9]' -e '^$' 1 2 file file2 file3
+-n -c -l 1 2 file file2 file3
+-n -c -l 1 2 file file2 file3
+-n -c -l -f pattern.txt 1 2 file file2 file3
+-n -c -l -f pattern.txt 1 2 file file2 file3
+-n -l -c 1 2 file file2 file3
+-n -l -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-n -l -c 1 2 file file2 file3
+-n -l -c 1 2 file file2 file3
+-n -l -c -f pattern.txt 1 2 file file2 file3
+-n -l -c -f pattern.txt 1 2 file file2 file3
+-n -h -v 1 2 file file2 file3
+-n -h -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-n -h -v 1 2 file file2 file3
+-n -h -v 1 2 file file2 file3
+-n -h -v -f pattern.txt 1 2 file file2 file3
+-n -h -v -f pattern.txt 1 2 file file2 file3
+-n -i -v 1 2 file file2 file3
+-n -i -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-n -i -v 1 2 file file2 file3
+-n -i -v 1 2 file file2 file3
+-n -i -v -f pattern.txt 1 2 file file2 file3
+-n -i -v -f pattern.txt 1 2 file file2 file3
+-n -s -v 1 2 file file2 file3
+-n -s -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-n -s -v 1 2 file file2 file3
+-n -s -v 1 2 file file2 file3
+-n -s -v -f pattern.txt 1 2 file file2 file3
+-n -s -v -f pattern.txt 1 2 file file2 file3
+-h -v -c 1 2 file file2 file3
+-h -v -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-h -v -c 1 2 file file2 file3
+-h -v -c 1 2 file file2 file3
+-h -v -c -f pattern.txt 1 2 file file2 file3
+-h -v -c -f pattern.txt 1 2 file file2 file3
+-h -v -n 1 2 file file2 file3
+-h -v -n -e '[0-9]' -e '^$' 1 2 file file2 file3
+-h -v -n 1 2 file file2 file3
+-h -v -n 1 2 file file2 file3
+-h -v -n -f pattern.txt 1 2 file file2 file3
+-h -v -n -f pattern.txt 1 2 file file2 file3
+-h -v -i 1 2 file file2 file3
+-h -v -i -e '[0-9]' -e '^$' 1 2 file file2 file3
+-h -v -i 1 2 file file2 file3
+-h -v -i 1 2 file file2 file3
+-h -v -i -f pattern.txt 1 2 file file2 file3
+-h -v -i -f pattern.txt 1 2 file file2 file3
+-h -v -s 1 2 file file2 file3
+-h -v -s -e '[0-9]' -e '^$' 1 2 file file2 file3
+-h -v -s 1 2 file file2 file3
+-h -v -s 1 2 file file2 file3
+-h -v -s -f pattern.txt 1 2 file file2 file3
+-h -v -s -f pattern.txt 1 2 file file2 file3
+-h -c -v 1 2 file file2 file3
+-h -c -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-h -c -v 1 2 file file2 file3
+-h -c -v 1 2 file file2 file3
+-h -c -v -f pattern.txt 1 2 file file2 file3
+-h -c -v -f pattern.txt 1 2 file file2 file3
+-h -c -l 1 2 file file2 file3
+-h -c -l -e '[0-9]' -e '^$' 1 2 file file2 file3
+-h -c -l 1 2 file file2 file3
+-h -c -l 1 2 file file2 file3
+-h -c -l -f pattern.txt 1 2 file file2 file3
+-h -c -l -f pattern.txt 1 2 file file2 file3
+-h -l -c 1 2 file file2 file3
+-h -l -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-h -l -c 1 2 file file2 file3
+-h -l -c 1 2 file file2 file3
+-h -l -c -f pattern.txt 1 2 file file2 file3
+-h -l -c -f pattern.txt 1 2 file file2 file3
+-h -n -v 1 2 file file2 file3
+-h -n -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-h -n -v 1 2 file file2 file3
+-h -n -v 1 2 file file2 file3
+-h -n -v -f pattern.txt 1 2 file file2 file3
+-h -n -v -f pattern.txt 1 2 file file2 file3
+-h -i -v 1 2 file file2 file3
+-h -i -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-h -i -v 1 2 file file2 file3
+-h -i -v 1 2 file file2 file3
+-h -i -v -f pattern.txt 1 2 file file2 file3
+-h -i -v -f pattern.txt 1 2 file file2 file3
+-h -s -v 1 2 file file2 file3
+-h -s -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-h -s -v 1 2 file file2 file3
+-h -s -v 1 2 file file2 file3
+-h -s -v -f pattern.txt 1 2 file file2 file3
+-h -s -v -f pattern.txt 1 2 file file2 file3
+-i -v -c 1 2 file file2 file3
+-i -v -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-i -v -c 1 2 file file2 file3
+-i -v -c 1 2 file file2 file3
+-i -v -c -f pattern.txt 1 2 file file2 file3
+-i -v -c -f pattern.txt 1 2 file file2 file3
+-i -v -n 1 2 file file2 file3
+-i -v -n -e '[0-9]' -e '^$' 1 2 file file2 file3
+-i -v -n 1 2 file file2 file3
+-i -v -n 1 2 file file2 file3
+-i -v -n -f pattern.txt 1 2 file file2 file3
+-i -v -n -f pattern.txt 1 2 file file2 file3
+-i -v -h 1 2 file file2 file3
+-i -v -h -e '[0-9]' -e '^$' 1 2 file file2 file3
+-i -v -h 1 2 file file2 file3
+-i -v -h 1 2 file file2 file3
+-i -v -h -f pattern.txt 1 2 file file2 file3
+-i -v -h -f pattern.txt 1 2 file file2 file3
+-i -v -s 1 2 file file2 file3
+-i -v -s -e '[0-9]' -e '^$' 1 2 file file2 file3
+-i -v -s 1 2 file file2 file3
+-i -v -s 1 2 file file2 file3
+-i -v -s -f pattern.txt 1 2 file file2 file3
+-i -v -s -f pattern.txt 1 2 file file2 file3
+-i -c -v 1 2 file file2 file3
+-i -c -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-i -c -v 1 2 file file2 file3
+-i -c -v 1 2 file file2 file3
+-i -c -v -f pattern.txt 1 2 file file2 file3
+-i -c -v -f pattern.txt 1 2 file file2 file3
+-i -c -l 1 2 file file2 file3
+-i -c -l -e '[0-9]' -e '^$' 1 2 file file2 file3
+-i -c -l 1 2 file file2 file3
+-i -c -l 1 2 file file2 file3
+-i -c -l -f pattern.txt 1 2 file file2 file3
+-i -c -l -f pattern.txt 1 2 file file2 file3
+-i -l -c 1 2 file file2 file3
+-i -l -c -e '[0-9]' -e '^$' 1 2 file file2 file3
+-i -l -c 1 2 file file2 file3
+-i -l -c 1 2 file file2 file3
+-i -l -c -f pattern.txt 1 2 file file2 file3
+-i -l -c -f pattern.txt 1 2 file file2 file3
+-i -n -v 1 2 file file2 file3
+-i -n -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-i -n -v 1 2 file file2 file3
+-i -n -v 1 2 file file2 file3
+-i -n -v -f pattern.txt 1 2 file file2 file3
+-i -n -v -f pattern.txt 1 2 file file2 file3
+-i -h -v 1 2 file file2 file3
+-i -h -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-i -h -v 1 2 file file2 file3
+-i -h -v 1 2 file file2 file3
+-i -h -v -f pattern.txt 1 2 file file2 file3
+-i -h -v -f pattern.txt 1 2 file file2 file3
+-i -s -v 1 2 file file2 file3
+-i -s -v -e '[0-9]' -e '^$' 1 2 file file2 file3
+-i -s -v 1 2 file file2 file3
+-i -s -v 1 2 file file2 file3
+-i -s -v -f pattern.txt 1 2 file file2 file3
+-i -s -v -f pattern.txt 1 2 file file2 file3

@@ -1,0 +1,16 @@
+---
+  - name: Start etcd.service 
+    service:
+      name: "etcd"
+      state: restarted
+      enabled: true
+
+  - name: Deamon reload
+    systemd:
+      daemon_reload: true
+
+  - name: Restart patroni.service 
+    service:
+      name: patroni
+      state: started
+      enabled: true

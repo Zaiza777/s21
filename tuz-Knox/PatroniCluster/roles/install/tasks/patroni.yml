@@ -1,0 +1,44 @@
+---
+  - name: Install gpg
+    apt: 
+      name: gpg 
+      state: latest
+      update_cache: true
+      lock_timeout: 120
+      
+  - name: Add Key repository
+    apt_key: url={{ pg.key }} state=present
+    
+  - name: Add repository
+    shell: "echo \"deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main\" | tee  /etc/apt/sources.list.d/pgdg.list"
+
+  - name: Install software PostgreSQL
+    apt:
+      name:
+        - postgresql-13
+        - python3-pip 
+        - python3-dev
+        - libpq-dev
+      state: present
+      update_cache: true
+      lock_timeout: 120
+    ignore_errors: true
+
+  - name: Disable Service PostgreSQL
+    service:
+      name: postgresql
+      enabled: no
+      state: stopped
+
+  - name: pip self-update
+    pip:
+      name: pip
+      executable: pip3
+      state: latest
+  
+  - name: Install from pip
+    pip: 
+      name: "{{ item }}"
+    loop:
+      - psycopg2
+      - patroni[etcd]

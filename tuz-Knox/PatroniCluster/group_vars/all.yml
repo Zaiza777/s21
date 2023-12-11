@@ -1,0 +1,26 @@
+etcd:
+  0: "195.2.84.248"
+  1: "94.103.88.22"
+  2: "92.38.240.4"
+  data_dir: "/var/lib/etcd/default"
+  password: "{{ secret.etcd_pass }}"
+
+pg:
+  1: "195.2.84.248"
+  2: "94.103.88.22"
+  3: "92.38.240.4"
+  data_dir: "/data/patroni_2"
+  bin_dir: "/usr/lib/postgresql/13/bin/"
+  password: "{{ secret.pg_pass }}"
+  pgpass: "/tmp/pgpass"
+  replication:
+    username: "postgres"
+    password: "{{ secret.rep_pass }}"
+  superuser:
+    username: "postgres"
+    password: "{{ secret.superuser_pass }}"
+  key: "https://www.postgresql.org/media/keys/ACCC4CF8.asc"
+
+patroni:
+  scope: "sps3"
+  namespace: "/cluster3/"

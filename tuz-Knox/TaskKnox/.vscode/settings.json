@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "https://json.schemastore.org/prisma.json": "file:///Users/smag/Documents/Ansible/roles/install/tasks/main.yml"
+    }
+}

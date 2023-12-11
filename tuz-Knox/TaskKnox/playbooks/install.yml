@@ -1,0 +1,28 @@
+---
+# This playbook deploys the whole application stack in this site.
+
+- name: Uninstall knox =(
+  hosts: "{{ inventory_host }}"
+  roles:
+    - uninstall
+  vars_files:
+    - ../group_vars/all.yml
+  tags: uninstall
+
+- name: Install Knox
+  hosts: "{{ inventory_host }}"
+  remote_user: root
+  vars_files:
+    - ../group_vars/all.yml
+    
+  roles:
+    - install
+  tags: install
+
+- name: Configure Knox
+  hosts: "{{ inventory_host }}"
+  roles:
+    - configure
+  vars_files:
+    - ../group_vars/all.yml
+  tags: configure

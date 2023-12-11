@@ -1,0 +1,81 @@
+image: gcc:latest
+
+stages:
+  - codeStyle
+  - build
+  - test
+  - deploy
+  - telegram
+
+Build1:
+  tags:
+    - s21
+  stage: build
+  script:
+    - cd src; make
+    - mkdir -p release
+    - rm -rf release/*
+    - mv cat/s21_cat grep/s21_grep release
+  needs:
+    - CodeStyle
+  artifacts:
+    paths:
+    - src/release/*
+    expire_in: 30 days
+
+CodeStyle:
+  tags:
+    - s21
+  stage: codeStyle
+  script:
+    - python3 src/cpplint.py src/cat/*.c src/grep/*.c
+
+test1:
+  tags:
+    - s21
+  stage: test
+  needs:
+    - Build1
+  script:
+    - cd src; make all s21_grep_test s21_cat_test | /usr/bin/grep -e "FAIL:\ " | /usr/bin/grep -o "[0-9]*" | /usr/bin/grep -q "^0"
+    - make clean
+    - echo "CI_STATUS=\"CI OKAY\"" > ../varI
+  artifacts:
+    paths:
+    - varI
+    expire_in: 1 hrs
+
+deploy1:
+  tags:
+    - s21
+  stage: deploy  
+  dependencies:
+    - Build1
+    - test1
+  needs:
+    - Build1
+    - test1
+  script:
+    - cd src; bash scp.sh
+    - echo "CD_STATUS=\"CD OKAY\"" >> ../varII
+  artifacts:
+    paths:
+    - varII
+    expire_in: 1 hrs
+
+telegram:
+  tags:
+    - s21
+  stage: telegram
+  when: always
+  variables:
+    CI_STATUS: "CI FAIL"
+    CD_STATUS: "CD FAIL"
+  dependencies:
+    - deploy1
+    - test1
+  before_script:
+    - if test -f varI; then source varI ; fi
+    - if test -f varII; then source varII ; fi
+  script:
+    - curl -X POST --output /dev/null https://api.telegram.org/bot5742134432:AAE_3CiC_IhlLUh0W-m344q1C-VMv0Bgvqs/sendMessage?chat_id=5079967322\&text="$CI_STATUS %0A$CD_STATUS %0ACocoJamba"

@@ -1,0 +1,46 @@
+---
+  - name: Conf Topologies
+    template:
+      src: "{{ item }}.j2"
+      dest: "{{ knox.path }}/conf/topologies/{{ item }}"
+      owner: "{{ knox.ta }}"
+      group: "{{ knox.ta }}"
+    loop:
+      - "kafka.xml"
+
+    # спорный тут момент, возможно не имеет смысла задавать владельца на файл
+    # Так как ниже на всю директорию рекурсивно задаются данные права
+
+  - name: gateway-site conf
+    template:
+      src: "{{ item }}.j2"
+      dest: "{{ knox.path }}/conf/{{ item }}"
+      owner: "{{ knox.ta }}"
+      group: "{{ knox.ta }}"
+    loop:
+      - "gateway-site.xml"
+
+  - name: Del jceks
+    file:
+      dest: "{{ knox.path}}/data/security/keystores/__gateway-credentials.jceks"
+      state: absent
+      
+  - name: Create-master key
+    shell: "{{ knox.path }}/bin/knoxcli.sh create-master --force --generate"
+    notify:
+      - Chown and Chmod on directory
+
+  - name: Start ldap
+    shell: "{{ knox.path }}/bin/ldap.sh start"
+    
+
+
+  - name: Service Knox
+    template:
+      src: "knox.service.j2"
+      dest: "/lib/systemd/system/knox.service"
+    notify:
+      - Reload daemon
+      - Restart Knox.service
+
+  

@@ -1,0 +1,13 @@
+
+knox:
+  url_download: "https://dlcdn.apache.org/knox/2.0.0/knox-2.0.0.zip"
+  pre_path: "/srv"
+  path: "/srv/knox"
+  name_directory: "knox-2.0.0"
+  ta: knox
+  host: "92.38.240.4"
+
+kafka: 
+  host: "http://localhost"
+
+inventory_host: knox

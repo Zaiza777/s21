@@ -1,0 +1,14 @@
+---
+  - name: Stop process
+    service: 
+      name: knox.service
+      state: stopped
+    ignore_errors: true
+  
+  - name: Remove Folder
+    file:
+      path: "{{ item }}"
+      state: absent
+    loop:
+      - "{{ knox.pre_path }}/{{ knox.name_directory }}"
+      - "/lib/systemd/system/knox.service"

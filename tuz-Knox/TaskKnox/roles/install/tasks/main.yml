@@ -1,0 +1,24 @@
+---
+  - name: Extract archive
+    unarchive:
+      src: "{{ knox.url_download }}"
+      dest: "{{ knox.pre_path }}"
+      owner: "{{ knox.ta }}"
+      group: "{{ knox.ta }}"
+      mode: 0700
+      remote_src: yes
+
+  - name: Link for Extract Knox
+    file:
+      src: "{{ knox.pre_path }}/{{ knox.name_directory }}"
+      dest: "{{ knox.path }}"
+      owner: "{{ knox.ta }}"
+      group: "{{ knox.ta }}"
+      mode: 0700
+      state: link
+
+  - name: Install java 1.8.0
+    apt:
+      name: openjdk-8-jdk
+      state: present
+  

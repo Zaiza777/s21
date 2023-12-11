@@ -1,0 +1,34 @@
+---
+  - name: Patroni Configure Service deamon
+    template:
+      src: "patroni.service.j2"
+      dest: "/etc/systemd/system/patroni.service"
+
+  - name: make directory data_dir for PostgreSQL
+    file:
+      path: "{{ pg.data_dir }}"
+      state: directory
+      owner: postgres
+      group: postgres
+      mode: 0700
+    ignore_errors: true
+
+
+  - name: Patroni Configure
+    template: 
+      src: "patroni.yml.j2"
+      dest: "/etc/patroni.yml"
+      owner: "postgres"
+      group: "postgres"
+      mode: 0400
+      force: true
+
+  - name: Deamon reload
+    systemd:
+      daemon_reload: true
+
+  - name: Restart patroni.service 
+    service:
+      name: patroni
+      state: started
+      enabled: true

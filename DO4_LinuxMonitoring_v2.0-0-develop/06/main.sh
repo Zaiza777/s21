@@ -1,0 +1,1 @@
+goaccess  --log-format='%h - - %s - "%m" - %^[%d:%t %^] "%r" "%u"' --date-format='%d/%b/%Y' --time-format=%T --enable-panel=REFERRERS --enable-panel=KEYPHRASES ../04/*.log -o report.html 
